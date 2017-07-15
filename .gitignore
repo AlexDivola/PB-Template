@@ -1,0 +1,7 @@
+/__MACOSX/
+/psd/
+*.txt
+*.json
+/pbt.sublime-project
+/pbt.sublime-project.favorites
+/pbt.sublime-workspace

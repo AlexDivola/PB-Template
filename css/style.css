@@ -1,0 +1,452 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%; /* = 1rem = 10px */
+}
+body {
+	background: #000 url(../images/bg.png) no-repeat center 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body,
+.foot-nav a,
+.logo a h2 {
+	color: #4f4f4f;
+}
+a {
+	text-decoration: none;
+}
+button,
+nav a,
+.logo h2,
+.offer span {
+	text-transform: uppercase;
+}
+.page-wrapper {
+	padding-top: .1rem;
+	background: #fff;
+	max-width: 96rem;
+	margin: 3.9rem auto;
+	position: relative;
+	border-radius: .7rem;
+	box-shadow: 0 0 13px #e8e8e8 inset, 0 0 20px #000;
+}
+
+/*HEADER*/
+header {
+	margin-bottom: 2.5rem;
+}
+.logo {
+	margin: 3.1rem 0 0 4.1rem;
+	padding-left: 4.8rem;
+	background: url(../images/logo.jpg) no-repeat 0 0;
+	background-size: 4.2rem;
+}
+.logo a h2 {
+	font-size: 3rem;
+	line-height: 80%;
+	text-shadow: 0 2px 1px #e8e8e8;
+}
+.logo span {
+	color: #969595;
+}
+.phone-number {
+	position: absolute;
+	text-align: right;
+	padding-right: 2.5rem;
+	width: 22.8rem;
+	height: 3.8rem;
+	top: 0;
+	right: 0;
+	background: url(../images/bg-phone.png) no-repeat .4rem 0;
+	background-size: cover;
+}
+.phone-number a {
+	color: #c0c0c0;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 170%;
+}
+nav {
+	float: right;
+	position: relative;
+	top: -2rem;
+}
+nav li {
+	display: inline-block;
+	margin-right: 2.4rem;
+}
+nav li a {
+	color: #808080;
+	font-size: 1.2rem;
+	padding: .4rem 1.4rem;
+	font-weight: bold;
+	border: 1px solid transparent;
+}
+nav li a:hover,
+nav li .active {
+	background: linear-gradient(to top,#2d7adf, #003c8d, #2d7adf);
+	border: 1px solid #000;
+	border-radius: .5rem;
+	box-shadow: 0 .2rem .2rem gray;
+	color: #fff;
+}
+/*-------------MAIN*/
+main {
+	position: relative;
+	box-shadow: 0 .8rem .8rem -.8rem #bababa;
+	overflow: hidden;
+}
+.title-bg {
+	position: inherit;
+	color: #fff;
+	background: url(../images/bg-banner.jpg);
+	background-size: cover;
+}
+.title-bg:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(4, 29, 94, .9) 30%, rgba(0, 0, 0, .1) 60%);
+}
+.page-title {
+	position: inherit;
+	/*line-height: 2.8rem;*/
+	padding: 2.7rem 4rem;
+}
+.page-title h1 {
+	float: left;
+	font-size: 2.5rem;
+	width: 40%;
+}
+.page-desc {
+	margin-left: 47%;
+	margin-top: .5rem;
+	font-style: italic;
+	font-size: 2rem;
+}
+/*--------------MAIN BANNER*/
+.banner {
+	height: 33.6rem;
+}
+.banner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(4, 29, 94, .85) 10%, rgba(255, 255, 255, 0) 40%);
+}
+.offer {
+	position: relative;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	float: left;
+	margin: 6rem 0 0 5rem;
+	max-width: 50%;
+}
+.offer h2 {
+	margin: 2.5rem 0;
+	font-size: 2.9rem;
+	letter-spacing: -1.6px;
+	font-weight: normal;
+	text-shadow: .1rem .3rem .4rem rgba(0, 0, 0, .8);
+}
+.offer span {
+	font-size: 3.5rem;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.offer button {
+	font-family: inherit;
+	font-weight: bold;
+	color: #b90016;
+	cursor: pointer;
+	background: url(../images/btn-arrow.png) no-repeat 94% 50%,
+				linear-gradient(to top, #dadada, #cccccc 50%, #dddddd 50%, #fdfdfd);
+	font-size: 2rem;
+	height: 5.2rem;
+	border-radius: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0);
+	padding: 0 5.2rem 0 2.5rem;
+	box-shadow: .1rem .2rem .2rem #4f4f4f;
+	margin-left: .5rem;
+}
+/*SLIDER*/
+.slider {
+	position: absolute;
+	right: 2.6rem;
+	top: 4.2rem;
+	background: url(../images/bg-slider.png);
+	background-size: cover;
+	height: 31.7rem;
+	width: 44.4rem;
+}
+.slider h3 {
+	font-size: 2rem;
+	margin: 1.2rem 2.4rem;
+}
+/*SLIDER-----------BOOTSTRAP CSS*/
+.carousel {
+	margin-left: 2.2rem;
+}
+.carousel-indicators {
+	position: absolute;
+	top: -4.7rem;
+	right: 2rem;
+	list-style: none;
+}
+.carousel-indicators li {
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: .1rem;
+	cursor: pointer;
+	background-color: #354582;
+	border-radius: 1rem;
+	box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .6) inset;
+}
+.carousel-indicators .active {
+	background-color: #fff;
+}
+.carousel-inner img {
+	width: 39.8rem;
+}
+
+/*FEATURES*/
+.features {
+	background: #ededed;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #cecece;
+	padding: 3rem 0 1.2rem;
+	text-align: center;
+}
+.features div {
+	display: inline-block;
+	text-align: left;
+	max-width: 26rem;
+	margin-right: 2rem;
+}
+.features div:last-child {
+	margin-right: 0;
+}
+.features img {
+	width: 7.7rem;
+	float: left;
+	margin-right: 1.5rem;
+}
+.features h4 {
+	margin-top: 1.3rem;
+}
+.features p {
+	font-size: 1.2rem;
+}
+
+/*INTRO ARTICLES*/
+.articles {
+	display: flex;
+	justify-content: space-between;
+	padding: 4.1rem 4.2rem 4.4rem;
+}
+.post {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	max-width: 26.5rem;
+}
+.post h2 {
+	font-size: 2.5rem;
+}
+.post img {
+	margin: 2.5rem 0 1.3rem;
+	width: 100%;
+}
+.post button,
+.contact-form input[type="submit"]{
+	cursor: pointer;
+	color: #6c6c6c;
+	font-weight: bold;
+	background: linear-gradient(to top, #e5e5e5, #fdfdfd);
+	border-radius: .5rem;
+	border: 1px solid  #ccc;
+	padding: .5rem 1rem;
+	margin-top: 1.4rem;
+}
+.main-page-post-link {
+	margin-top: 1rem;
+}
+.main-page-post-link li {
+	border-bottom: 1px dashed #ccc;
+}
+.main-page-post-link li:last-child {
+	border: none;
+}
+.main-page-post-link a {
+	display: block;
+	line-height: 2.4;
+	margin-left: 2rem;
+}
+
+/* CONTACT */
+.contact-form {
+	padding: .7rem 4.2rem;
+	margin-right: 26rem;
+}
+label {
+	display: block;
+	font-size: 1.3rem;
+	margin: 2rem 0;
+	max-width: 38.5rem;
+}
+.contact-form input:not([type="submit"]),
+.contact-form textarea {
+	background: linear-gradient(to bottom, #efefef, #fff);
+	font-size: 2rem;
+	line-height: 2rem;
+	width: 100%;
+	margin: .8rem 0 .5rem;
+	padding: .5rem;
+	border: 1px solid #c9c9c9;
+	border-radius: .5rem;
+}
+.contact-form input[type="submit"] {
+	margin: 0 0 6rem;
+	padding: .5rem 2rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border: 1px solid blue;
+}
+/* Sidebar */
+aside {
+	float: right;
+	padding-bottom: 32767px;
+	margin-bottom: -32767px;
+	width: 26rem;
+	background: linear-gradient(to right, #efefef, #fff 2rem);
+	broder-left: 1px solid #dfdfdf;
+}
+div.side-block:first-child {
+	margin-top: 4rem;
+}
+.side-block h3 {
+	color: #000;
+	font-size: 1.5rem;
+	padding: .5rem 2.3rem;
+	background: linear-gradient(to right, #cfcfcf, #fff 70%);
+}
+.side-block p {
+	padding: 1.5rem 2.2rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+/* FOOTER */
+footer {
+	background: #ededed;
+	font-size: 1.2rem;
+	border-radius: 0 0 .7rem .7rem;
+}
+.footer-info {
+	display: grid;
+	grid-template-columns: .9fr 1.9fr 1.8fr;
+	grid-gap: 6rem;
+	padding: 2.4rem 4.3rem .7rem;
+	box-shadow: 0 .1rem #ccc, 0 .2rem #fff;
+}
+.footer-info h3 {
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+}
+.foot-nav li,
+.feedback p,
+.feedback address {
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+.feedback address {
+	font-weight: bold;
+	font-style: normal;
+}
+.blog-posts > div:first-of-type {
+	margin-bottom: 1.5rem;
+}
+.blog-posts-item .post-title a {
+	font-weight: bold;
+	color: #0f4db6;
+}
+.copyright {
+	padding: 2.1rem 4.3rem;
+}
+.copyright::after,
+.page-title::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.copyright div:first-child {
+	float: left;
+	max-width: 60%;
+}
+.social a {
+	display: inline-block;
+	background: url(../images/social.png);
+	background-size: auto 3.8rem;
+	margin-right: 1rem;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.side-social a {
+	width: 3.5rem;
+    height: 3.8rem;
+}
+.side-social a[title="Twitter"] {
+	background-position: -7rem 0;
+}
+.side-social a[title="LinkedIn"] {
+	background-position: -3.5rem 0;
+}
+.side-social a[title="Facebook"] {
+	background-position: 0 0;
+}
+.footer-social a {
+	width: 1.8rem;
+	height: 1.8rem;
+}
+.footer-social {
+	text-align: center;
+}
+.footer-social a[title="Twitter"] {
+	background-position: -14.5rem 0;
+}
+.footer-social a[title="LinkedIn"] {
+	background-position: -12.5rem 0;
+}
+.footer-social a[title="Facebook"] {
+	background-position: -10.5rem 0;
+}
+.foot-logo {
+	float: right;
+	background: url(../images/foot-logo.png);
+	background-size: cover;
+	height: 1.8rem;
+	width: 11.7rem;
+}
