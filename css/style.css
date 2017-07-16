@@ -34,7 +34,7 @@ p {
 }
 body,
 .foot-nav a,
-.logo a h2 {
+.logo a h1 {
 	color: #4f4f4f;
 }
 a {
@@ -42,7 +42,7 @@ a {
 }
 button,
 nav a,
-.logo h2,
+.logo h1,
 .offer span {
 	text-transform: uppercase;
 }
@@ -57,7 +57,7 @@ body > header {
 	background: url(../images/logo.jpg) no-repeat 0 0;
 	background-size: 4.2rem;
 }
-.logo a h2 {
+.logo a h1 {
 	font-size: 3rem;
 	line-height: 80%;
 	text-shadow: 0 2px 1px #e8e8e8;
