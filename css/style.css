@@ -44,7 +44,8 @@ a {
 button,
 nav a,
 .logo h1,
-.offer span {
+.offer span,
+.more-link {
 	text-transform: uppercase;
 }
 
@@ -277,8 +278,9 @@ main {
 	margin: 2.5rem 0 1.3rem;
 	width: 100%;
 }
-.post button,
-.contact-form input[type="submit"]{
+.more-link,
+.contact-form button {
+	display: inline-block;
 	cursor: pointer;
 	color: #6c6c6c;
 	font-weight: bold;
@@ -287,6 +289,9 @@ main {
 	border: 1px solid  #ccc;
 	padding: .5rem 1rem;
 	margin-top: 1.4rem;
+}
+.contact-form button {
+	margin-top: 0;
 }
 .main-page-post-link {
 	margin-top: 1rem;
@@ -305,7 +310,7 @@ main {
 
 /* CONTACT */
 .contact-form {
-	padding: .7rem 4.2rem;
+	padding: .7rem 4.2rem 5rem;
 	margin-right: 26rem;
 }
 label {
