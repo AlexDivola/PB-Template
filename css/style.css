@@ -360,8 +360,8 @@ div.side-block:first-child {
 	font-size: 1.2rem;
 	line-height: 2rem;
 }
-/* FOOTER */
-footer {
+/* MAIN FOOTER */
+.main-footer {
 	background: #ededed;
 	font-size: 1.2rem;
 	border-radius: 0 0 .7rem .7rem;
