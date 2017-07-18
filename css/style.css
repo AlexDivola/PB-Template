@@ -266,17 +266,31 @@ main {
 	justify-content: space-between;
 	padding: 4.1rem 4.2rem 4.4rem;
 }
-.post {
+.articles-item {
 	font-size: 1.2rem;
 	line-height: 2rem;
 	max-width: 26.5rem;
 }
-.post h2 {
+.articles-item h2 {
 	font-size: 2.5rem;
 }
-.post img {
+.articles-item img {
 	margin: 2.5rem 0 1.3rem;
 	width: 100%;
+}
+.articles-item p {
+	margin-bottom: 1.4rem;
+}
+.articles-item li {
+	border-bottom: 1px dashed #ccc;
+}
+.articles-item li:last-child {
+	border: none;
+}
+.articles-item li a {
+	display: block;
+	line-height: 2.4;
+	margin-left: 2rem;
 }
 .more-link,
 .contact-form button {
@@ -288,24 +302,9 @@ main {
 	border-radius: .5rem;
 	border: 1px solid  #ccc;
 	padding: .5rem 1rem;
-	margin-top: 1.4rem;
 }
 .contact-form button {
 	margin-top: 0;
-}
-.main-page-post-link {
-	margin-top: 1rem;
-}
-.main-page-post-link li {
-	border-bottom: 1px dashed #ccc;
-}
-.main-page-post-link li:last-child {
-	border: none;
-}
-.main-page-post-link a {
-	display: block;
-	line-height: 2.4;
-	margin-left: 2rem;
 }
 
 /* CONTACT */
