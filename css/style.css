@@ -110,7 +110,6 @@ nav .active {
 main {
 	position: relative;
 	box-shadow: 0 .8rem .8rem -.8rem #bababa;
-	overflow: hidden;
 }
 .title-bg {
 	position: inherit;
@@ -308,6 +307,9 @@ main {
 }
 
 /* CONTACT */
+.wrap-contact-form {
+	overflow: hidden;
+}
 .contact-form {
 	padding: .7rem 4.2rem 5rem;
 	margin-right: 26rem;
